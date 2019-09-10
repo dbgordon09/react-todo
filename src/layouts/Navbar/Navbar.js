@@ -1,12 +1,13 @@
-import React from 'react';
-import styles from './Navbar.module.scss';
-import links from './Links';
+import React from "react";
+import styles from "./Navbar.module.scss";
+import links from "./Links";
+import { Link } from "react-router-dom";
 
 export default () => {
   return (
     <header className={styles.navbar}>
       <nav className="flex h-full">
-        <a href="/" className={`${styles.navbar__home} h-full pr-4`}>
+        <Link to="/" className={`${styles.navbar__home} h-full pr-4`}>
           <img
             className={`${styles.navbar__logo} h-full float-left`}
             src="/images/logo.svg"
@@ -17,15 +18,15 @@ export default () => {
           >
             React ToDo
           </h4>
-        </a>
+        </Link>
         {links.map((link, index) => (
           <div className="h-full table" key={index}>
-            <a
-              href={link.url}
+            <Link
+              to={link.url}
               className={`${styles.navbar__links} h-full table-cell align-middle`}
             >
               {link.title}
-            </a>
+            </Link>
           </div>
         ))}
       </nav>
