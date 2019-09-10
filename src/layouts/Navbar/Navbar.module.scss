@@ -1,5 +1,7 @@
+@import '../../css/variables.scss';
+
 .navbar {
-    background-color: #282C34;
+    background-color: $brand--color;
     box-shadow: 0 0 4px 4px #F5F5F5;
     height: 64px;
     overflow: hidden;
