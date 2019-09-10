@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #282C34;
+    box-shadow: 0 0 4px 4px #F5F5F5;
+    height: 64px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar__home:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+    transition: text-shadow 0.15s ease-in;
+    transition: transform 0.15s ease-in;
+    transform: scale(1.05);
+}
+
+.navbar__logo {
+    padding: 8px 0 8px 16px;
+}
+
+.navbar__title {
+    color: #61dafb;
+    letter-spacing: 4px;
+    line-height: 64px;
+}
+
+.navbar__links {
+    color: white;
+    font-size: 1.05rem;
+    letter-spacing: 0.25rem;
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+.navbar__links:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+    text-shadow: 1px 2px 2px #35495e;
+    transition: text-shadow 0.15s ease-in;
+    transform: scale(1.05);
+    transition: transform 0.15s ease-in;
+}
