@@ -5,7 +5,7 @@ class Link {
   }
 }
 export default [
-  new Link("Home", "/"),
-  new Link("ToDo", "/todo"),
-  new Link("About Us", "/about-us")
+  new Link('Home', '/'),
+  new Link('ToDo', '/todo'),
+  new Link('About Us', '/about-us'),
 ];
