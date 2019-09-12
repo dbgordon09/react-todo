@@ -1,0 +1,6 @@
+@import '../css/dimens.scss';
+
+.App {
+  text-align: center;
+  font-size: calc(#{$font--size--smallest} + 0.2vw);
+}
