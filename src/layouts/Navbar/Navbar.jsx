@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import links from './Links';
 
-export default () => (
+/**
+ * Full width navigation bar
+ * @type {React.FunctionComponentElement<void>}
+ */
+const Navbar = () => (
   <header className={styles.navbar}>
     <nav className="flex h-full">
       <Link to="/" className={`${styles.navbar__home} h-full pr-4`}>
@@ -31,3 +35,5 @@ export default () => (
     </nav>
   </header>
 );
+
+export default Navbar;
