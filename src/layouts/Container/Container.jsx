@@ -5,12 +5,13 @@ import styles from './Container.module.scss';
 /**
  * Container for page based content to be rendered into.
  *
- * NOTE: SHOULD BE PASSED A CHILDREN TO RENDER.
- * @type {React.FunctionComponentElement<React.ReactNode|React.ReactNodeArray>}
- * @param {React.ReactNode|ReactNodeArray} children - Content to be rendered within the container.
+ * NOTE: SHOULD BE PASSED CHILDREN TO RENDER.
+ * @type {React.FunctionComponent<React.ReactNode>}
  */
 const Container = ({ children }) => (
-  <div className={`${styles.container}`}>{children}</div>
+  <div className={`${styles.container}`}>
+    {children}
+  </div>
 );
 
 Container.propTypes = {

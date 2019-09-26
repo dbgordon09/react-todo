@@ -4,8 +4,8 @@ import styles from './Navbar.module.scss';
 import links from './Links';
 
 /**
- * Full width navigation bar
- * @type {React.FunctionComponentElement<void>}
+ * Full width navigation bar.
+ * @type {React.FunctionComponent}
  */
 const Navbar = () => (
   <header className={styles.navbar}>
