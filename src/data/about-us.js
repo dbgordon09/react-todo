@@ -7,6 +7,9 @@ class Person {
   }
 }
 
+/**
+ * Array of interesting people. 🧑‍🤝‍🧑
+ */
 export default [
   new Person('Dale Gordon', '/images/dale-about-us.png', 'JavaScript, music and hiking enthusiast'),
   new Person('Justin Hoffman', '/images/dale-about-us.png', 'Overall sick oak :D'),

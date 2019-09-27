@@ -2,7 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 
-// Normalize all paths to not have trailing slashes even if they matched <Route> with one:
+/**
+ * Router that normalizes all paths, removing trailing slashes,
+ * even if they matched a <Route> with a defined path.
+ *
+ * @see { @link https://github.com/ReactTraining/react-router-5-course/blob/master/src/utils/Router.js }
+ *
+ * NOTE: SHOULD BE PASSED CHILDREN TO RENDER.
+ * @type {React.FunctionComponent<React.ReactNode>}
+ */
 const Router = ({ children }) => (
   <BrowserRouter>
     <Route

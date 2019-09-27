@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.scss';
 import links from './Links';
 
+/**
+ * Full width footer, containing an array of links as well as other important information.
+ *
+ * @type {React.FunctionComponent}
+ */
 export default () => (
   <footer className={styles.navbar}>
     <nav className="flex h-full">

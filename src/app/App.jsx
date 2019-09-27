@@ -8,6 +8,11 @@ import Footer from '../layouts/Footer/Footer';
 import Router from '../utils/Router';
 import store from '../store';
 
+/**
+ * React Application. ⚛️
+ *
+ * @type {React.FunctionComponent}
+ */
 const App = () => (
   <Provider store={store}>
     <div className="App">
